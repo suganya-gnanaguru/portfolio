@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Dashboard from './dashboard';
+import Dashboard from './components/dashboard.js';
+import Header from './components/header.js';
+import Introduction from './components/introduction.js';
+import Projects from './components/projects.js';
+import Contact from './components/contact.js';
+//import Footer from './components/footer.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard/>
+    <Header/>
+    <Dashboard />
+    <Introduction />
+    <Projects />
+    <Contact />
   </React.StrictMode>
 );
 
